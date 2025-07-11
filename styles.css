@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: 0 200px;
+}
+
+.car-container {
+  height: auto;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.car-one {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.car-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.car-three {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+
+.car {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.car-description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 80px;
+}
+
+.cta-button {
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  width: 60%;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-one {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-two {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-three {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  body {
+    padding: 400px 0;
+  }
+  .car-one {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+  }
+  .car-three {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+
+  .car-description {
+    margin-bottom: 30px;
+  }
+}
